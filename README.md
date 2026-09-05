@@ -102,7 +102,8 @@ preenchido — não precisa caçar no código.
 - [x] Retrato da Dra. Inara na capa (IMG_4739)
 - [x] Foto dela no consultório, seção "Sobre" (IMG_4702)
 - [x] Galeria: sala de exames vazia (lote antigo) e sala de imagem com ela
-      (IMG_4796)
+- [x] `aparelhos.jpg` refeita pelo cliente: mesma cena, ângulo mais fechado e
+      melhor qualidade, no lugar da IMG_4796
 - [x] Ilustrações removidas a pedido dela (visual mais limpo)
 - [x] Galeria refeita: sala de exames, exames de imagem e sala de espera
 - [x] `recepcao.jpg` removida — era o mesmo ambiente da capa, em resolução baixa

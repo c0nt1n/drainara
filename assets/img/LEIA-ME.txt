@@ -58,9 +58,20 @@ exames.jpg              1280x960 — sala de exames vazia.
      Primeira foto da galeria do consultório.
      .frame--exames { --ar:4/5; --foco:50% 55% }
 
-aparelhos.jpg           1600x1200 — original IMG_4796.
-     Sala dos exames de imagem, com os dois aparelhos e os diplomas.
+aparelhos.jpg           1086x1448 — a Dra. Inara na sala dos exames de
+     imagem, entre os dois aparelhos, com os diplomas na parede.
      .frame--aparelhos { --ar:4/5; --foco:50% 45% }
+     Substituiu a versão anterior (IMG_4796, mesma cena) por uma foto que
+     o cliente refez: ângulo mais fechado e melhor qualidade. Some o
+     rodapé, os cabos e o pé da cadeira que apareciam embaixo.
+     ATENÇÃO ao trocar de novo: a antiga estava gravada DEITADA (1600x1200)
+     com EXIF orientation 6, então o navegador girava e pintava em pé —
+     e o width/height do <img> declarava 1600x1200, o contrário do que ia
+     para a tela. Esta é 3:4 em pé de verdade, sem tag de rotação, e o
+     width/height agora bate. Se a próxima vier do iPhone, confira o EXIF
+     antes de confiar nas dimensões do arquivo.
+     A moldura é 4:5 (0,8) e a foto é 3:4 (0,75): o corte tira só 6% da
+     altura, quase nada. Por isso o --foco quase não tem efeito aqui.
 
 lounge.jpg              1107x714 — sala de espera, terceira da galeria.
      .frame--lounge { --ar:4/5; --foco:50% 50% }
