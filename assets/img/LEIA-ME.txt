@@ -14,18 +14,31 @@ AS FOTOS
 --------
 
 entrada.jpg             2000x1500 — sala de espera, com a entrada ao fundo.
-     É a FOTO DE CAPA, em tela cheia, sob um véu escuro.
+     É a FOTO DE CAPA em tela LARGA, em tela cheia, sob um véu escuro.
      .hero__foto img { object-position:50% 52% }
-     No celular o valor muda para 10% 52%, numa media query. A janela do
-     celular tem proporção ~0,46 e a foto é 4:3 deitada, então aparecem só
-     693 dos 2000 px de largura. Recortar o arquivo não resolve: como o
-     corte usa a altura inteira, a fatia visível tem sempre essa largura —
-     muda só ONDE ela cai. Em 10% o quadro pega as poltronas, o tapete e o
-     corredor da entrada, e deixa de fora a TV, que é um retângulo aceso
-     e ficava bem atrás do título.
      O vidro do elevador, à esquerda, tem a marca "Lavezzo" gravada. Ela
      cai na parte mais escura do véu e não fica legível — mas se um dia o
      véu for aliviado, confira esse canto antes.
+
+entrada-vertical.jpg    1086x1448 — a MESMA sala de espera, do mesmo ângulo,
+     enquadrada em pé. É a FOTO DE CAPA em tela EM PÉ (celular e tablet).
+     As duas entram por um <picture> no index.html, e a chave é
+     media="(max-aspect-ratio: 1/1)": janela mais alta que larga usa esta.
+     Numa janela de celular (proporção ~0,46) a foto deitada aparecia por
+     uma fatia de 693 dos 2000 px — pouco mais de um terço da largura, sem
+     contexto nenhum da sala. Em pé, a mesma janela mostra 62% da largura:
+     entram as poltronas, o tapete, a mesa de centro e o sofá.
+     .hero__foto img { object-position:10% 50% } na mesma media query.
+     O 10% empurra a TV — um retângulo aceso, no meio da foto — para a
+     direita, para fora de trás do título, e traz a poltrona e o corredor
+     da entrada para o lugar dele. Nessa media query o véu também inverte:
+     na tela larga ele fecha à esquerda, onde o texto cai, e afina à
+     direita; aqui o texto ocupa a largura inteira, então quem precisa ser
+     abafado é a TV.
+     Esta veio pelo WhatsApp, que reduz para ~1080 px de largura. Dá conta
+     de qualquer celular, mas não serviria para a tela larga — por isso o
+     desktop continua na entrada.jpg, de 2000 px. Se o original aparecer,
+     trocar por ele melhora o tablet.
 
 dra-inara-retrato.jpg   1600x1200 — original IMG_4739.
      Abre a seção "Atendimento". Retrato frontal na mesa.

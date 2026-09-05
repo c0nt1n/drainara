@@ -235,6 +235,7 @@ h2 + p, h2 + .lead{ margin-top:1.1rem }
   color:#F6F2EA;
 }
 .hero__foto{ position:absolute; inset:0; z-index:-2; overflow:hidden }
+.hero__foto picture{ display:block; width:100%; height:100% }
 .hero__foto img{
   width:100%; height:100%;
   object-fit:cover; object-position:50% 52%;
@@ -255,6 +256,28 @@ h2 + p, h2 + .lead{ margin-top:1.1rem }
     linear-gradient(180deg,
       color-mix(in srgb, var(--escuro-2) 78%, transparent) 0%,
       transparent 24%);
+}
+/* Janela em pé: entra a foto vertical (ver o <picture> no index.html) e o
+   véu muda de lado. Na tela larga ele fecha à esquerda, onde o texto cai,
+   e afina à direita; aqui o texto ocupa a largura inteira, então quem
+   precisa ser abafado é a TV da sala — um retângulo aceso que fica à
+   direita neste enquadramento. O foco em 10% empurra a TV para fora do
+   título e traz a poltrona e o corredor da entrada para trás dele. */
+@media (max-aspect-ratio: 1/1){
+  .hero__foto img{ object-position:10% 50% }
+  .hero::before{
+    background:
+      linear-gradient(90deg,
+        color-mix(in srgb, var(--escuro-2) 80%, transparent) 0%,
+        color-mix(in srgb, var(--escuro-2) 78%, transparent) 45%,
+        color-mix(in srgb, var(--escuro-2) 88%, transparent) 100%),
+      linear-gradient(0deg,
+        color-mix(in srgb, var(--escuro-2) 50%, transparent) 0%,
+        transparent 45%),
+      linear-gradient(180deg,
+        color-mix(in srgb, var(--escuro-2) 78%, transparent) 0%,
+        transparent 24%);
+  }
 }
 .hero__in{ width:100%; max-width:1340px }
 .hero .kicker{ color:#DCBB7C; margin-bottom:1.6rem }
@@ -288,14 +311,6 @@ h2 + p, h2 + .lead{ margin-top:1.1rem }
 }
 @media (max-width:640px){
   .hero h1{ max-width:none }
-  /* No celular a janela é altíssima (proporção ~0,46) e a foto é 4:3
-     deitada: aparecem só 693 dos 2000 px de largura. Recortar o arquivo
-     não ajuda — o corte usa a altura inteira, então a fatia visível tem
-     sempre a mesma largura; o que muda é ONDE ela cai. Deslocado para a
-     esquerda, o quadro pega as duas poltronas, o tapete e o corredor da
-     entrada, e deixa a TV de fora, que era o retângulo aceso batendo
-     atrás do título. */
-  .hero__foto img{ object-position:10% 52% }
 }
 
 /* Marca de rolagem: um fio com um brilho que desce, no canto oposto ao
