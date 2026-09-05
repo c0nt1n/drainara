@@ -81,6 +81,37 @@ espera, em resolução baixa, e a capa agora mostra esse ambiente melhor.
 Ela continua no histórico do git se fizer falta.
 
 
+O FAVICON
+---------
+favicon-32.png          32x32,  fundo transparente — o ícone da aba.
+favicon-192.png         192x192, fundo transparente — Android e atalhos.
+apple-touch-icon.png    180x180, fundo CREME — iOS.
+
+Os três saíram do monograma "iC" da logo da doutora ("Logo Dr Inara
+Contin.png", 1254x1254, que o cliente mandou). A logo chegou em PNG sem
+canal alfa, sobre uma chapa de mármore creme, então o fundo foi tirado
+pela luminância: o creme mede lum 0,97 e o ouro fica bem abaixo disso.
+Onde a borda é meio-tom, a cor do ouro foi recalculada tirando o creme
+que estava misturado (F = (P - (1-a)·B) / a) — sem isso sobra uma franja
+clara em volta da marca quando o fundo é escuro.
+
+Recorte usado, no original: x 483..785, y 343..655.
+A marca inteira vai até x 868, mas a ponta da cauda foi deixada de fora
+a pedido do cliente. Não é só gosto: sem cortar, a marca fica 390x313 e,
+espremida no quadrado do ícone, o "iC" encolhe e a cauda vira um fio
+invisível a 32px. Cortada, fica 303x313 — quadrada, do formato do ícone,
+e o "iC" é desenhado no maior tamanho possível. O corte cai onde a cauda
+já está fina, então a ponta reta não se percebe no tamanho de aba.
+
+O iOS ignora transparência e compõe o que sobra sobre PRETO, por isso o
+apple-touch-icon leva o creme do site (#F6F2EA) por baixo e tem menos
+folga nas bordas — o próprio iOS aplica a máscara de canto arredondado.
+
+Para refazer: o script está no histórico desta conversa, mas o caminho é
+recortar a região acima, montar o alfa pela luminância e centralizar num
+quadrado com 8% de folga (12% no do iOS).
+
+
 PARA TROCAR UMA FOTO
 --------------------
 Salve o arquivo novo com o MESMO nome. Se a proporção for parecida com a
