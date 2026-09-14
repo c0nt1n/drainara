@@ -55,6 +55,9 @@ preenchido — não precisa caçar no código.
       a mensagem pronta: "Olá! Vim pelo site e gostaria de agendar uma consulta
       com a Dra. Inara." O "vim pelo site" serve de rastreio de origem: dá para
       medir quanto do agendamento vem daqui sem precisar de ferramenta nenhuma
+- [x] Telefone da clínica (11) 3884-9477, logo abaixo do WhatsApp. É outro
+      número — não confundir com a antiga linha "Ligar", que só repetia o
+      WhatsApp e saiu por isso
 - [x] E-mail: inaraoftalmogia@gmail.com
 - [x] Instagram: [@drainaracontin](https://www.instagram.com/drainaracontin/)
 - [ ] **Conferir a grafia do e-mail.** Está no site exatamente como veio:
