@@ -92,12 +92,15 @@ preenchido — não precisa caçar no código.
       dizer se essa menção fica ou sai também
 
 ### Capa
-- [x] Foto da sala de espera na capa (`entrada.jpg`, 2000x1500), na tela larga
+- [x] Foto da sala de espera na capa (`entrada.jpg`), na tela larga — trocada
+      pela versão tratada que o cliente mandou (1448x1086, mais nítida que a
+      anterior de 2000x1500 apesar de menor)
 - [x] Versão em pé da mesma sala (`entrada-vertical.jpg`, 1086x1448) para
       celular e tablet, por um `<picture>`. Deitada, a foto aparecia no celular
       por uma fatia de pouco mais de um terço da largura
-- [ ] Se quiser mais nitidez em monitor grande, passar o HEIC original para a
-      pasta do projeto — o que veio pelo chat já foi reduzido para 2000 px
+- [ ] A versão tratada tem 1448 px de largura: em monitor grande (2560 px ou
+      mais) ela é esticada. Se houver essa mesma edição em resolução maior,
+      vale trocar
 - [ ] A vertical veio pelo WhatsApp, reduzida para ~1080 px. Serve em qualquer
       celular; o original deixaria o tablet melhor
 

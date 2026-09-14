@@ -13,9 +13,14 @@ Assim dá para reenquadrar mudando um número, sem reexportar nada.
 AS FOTOS
 --------
 
-entrada.jpg             2000x1500 — sala de espera, com a entrada ao fundo.
+entrada.jpg             1448x1086 — sala de espera, com a entrada ao fundo.
      É a FOTO DE CAPA em tela LARGA, em tela cheia, sob um véu escuro.
      .hero__foto img { object-position:50% 52% }
+     Versão tratada que o cliente mandou ("Foto Sala de Espera Inara.jpg"):
+     verticais endireitadas e mais definição. Tem MENOS pixels que a anterior
+     (2000x1500), mas foi comparada no tamanho de uma tela de 1920 px e é
+     visivelmente mais nítida — a antiga tinha uma névoa leve. Se um dia vier
+     esta mesma versão tratada em resolução maior, é só salvar por cima.
      O vidro do elevador, à esquerda, tem a marca "Lavezzo" gravada. Ela
      cai na parte mais escura do véu e não fica legível — mas se um dia o
      véu for aliviado, confira esse canto antes.
