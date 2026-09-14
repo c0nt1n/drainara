@@ -73,8 +73,18 @@ aparelhos.jpg           1086x1448 — a Dra. Inara na sala dos exames de
      A moldura é 4:5 (0,8) e a foto é 3:4 (0,75): o corte tira só 6% da
      altura, quase nada. Por isso o --foco quase não tem efeito aqui.
 
-lounge.jpg              1107x714 — sala de espera, terceira da galeria.
+lounge.jpg              1400x1867 — sala de espera, terceira da galeria.
      .frame--lounge { --ar:4/5; --foco:50% 50% }
+     Original: "Foto entrada 2(Google Meu Negócio).HEIC" (4284x5712), a
+     mesma foto do perfil dela no Google. Poltronas de costas, sofá azul e
+     escultura vermelha ao fundo, porta da sala de exames à direita.
+     Substituiu uma versão de 1107x714 que tinha vindo pelo chat, de outro
+     ângulo: a moldura em pé usava só 571 px de largura dela e o navegador
+     esticava em qualquer tela, por isso ficava embaçada. O original daquele
+     ângulo nunca apareceu.
+     Nesta máquina (Windows) não há codec HEVC, então HEIC não abre pelo
+     sistema; a conversão foi feita com o pacote npm heic-convert, que
+     decodifica em JavaScript puro.
 
 A recepcao.jpg foi removida: era um segundo ângulo da mesma sala de
 espera, em resolução baixa, e a capa agora mostra esse ambiente melhor.

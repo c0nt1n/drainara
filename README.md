@@ -110,8 +110,9 @@ preenchido — não precisa caçar no código.
 - [x] Ilustrações removidas a pedido dela (visual mais limpo)
 - [x] Galeria refeita: sala de exames, exames de imagem e sala de espera
 - [x] `recepcao.jpg` removida — era o mesmo ambiente da capa, em resolução baixa
-- [ ] `exames.jpg` (1280 px) e `lounge.jpg` (1107 px) ainda são as versões
-      reduzidas que vieram pelo chat
+- [x] `lounge.jpg` trocada pela foto original do Google Meu Negócio, em
+      1400x1867 — a anterior (1107 px, do chat) aparecia embaçada
+- [ ] `exames.jpg` (1280 px) ainda é a versão reduzida que veio pelo chat
 
 ### Domínio
 - [ ] `drainaracontin.com.br` está **livre** (consultado no registro.br).
