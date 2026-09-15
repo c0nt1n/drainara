@@ -117,13 +117,19 @@ preenchido — não precisa caçar no código.
       1400x1867 — a anterior (1107 px, do chat) aparecia embaçada
 - [ ] `exames.jpg` (1280 px) ainda é a versão reduzida que veio pelo chat
 
-### Domínio
-- [ ] `drainaracontin.com.br` está **livre** (consultado no registro.br).
-      É o domínio natural para este site, no lugar da URL do github.io
+### Domínio e publicação
+- [x] Domínio definido: **drainaracontinrassi.com.br**, na Hostinger. Já está
+      no `canonical`, no `og:url`/`og:image` e no `url` dos dados estruturados
+- [x] O `noindex` **continua no repositório de propósito**: ele segura a
+      prévia do GitHub Pages fora do Google. Quem tira é o pacote da Hostinger
+      — o zip é gerado sem essa linha, sem os arquivos internos (README,
+      LEIA-ME, .github) e com o `?v=dev` trocado pelo commit, como o workflow
+      faz. Não suba a pasta do repositório nem o "Download ZIP" do GitHub
+- [ ] Zip no Windows: nunca pelo `Compress-Archive` do PowerShell 5.1 — ele
+      grava as pastas com `\` e o extrator da Hostinger cria arquivos soltos
+      com nome `assets\css\site.css`, e o site sobe sem estilo
 
 ### Antes de publicar de verdade
-- [ ] Remover a linha `<meta name="robots" content="noindex, nofollow">` do
-      `index.html` — enquanto ela estiver lá, o site não é indexado pelo Google
 - [ ] Revisar o texto do rodapé sobre publicidade médica. Blefaroplastia tem
       componente estético, e as normas do CFM são rígidas: nada de antes e
       depois, depoimento de paciente ou promessa de resultado
