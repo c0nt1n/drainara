@@ -58,11 +58,9 @@ preenchido — não precisa caçar no código.
 - [x] Telefone da clínica (11) 3884-9477, logo abaixo do WhatsApp. É outro
       número — não confundir com a antiga linha "Ligar", que só repetia o
       WhatsApp e saiu por isso
-- [x] E-mail: inaraoftalmogia@gmail.com
+- [x] E-mail: inaraoftalmologia@gmail.com — confirmado pelo cliente. O que
+      tinha vindo antes (`inaraoftalmogia`, sem o "lo") era erro de digitação
 - [x] Instagram: [@drainaracontin](https://www.instagram.com/drainaracontin/)
-- [ ] **Conferir a grafia do e-mail.** Está no site exatamente como veio:
-      `inaraoftalmogia@gmail.com`. Repare que falta o "lo" de oftalmo**lo**gia —
-      pode ser o endereço real, mas se for engano o contato se perde calado
 
 ### Consultório
 - [x] Endereço: Rua Maria Figueiredo, 595 — conjunto 83, Paraíso, São Paulo/SP
